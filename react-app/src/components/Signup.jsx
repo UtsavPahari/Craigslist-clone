@@ -3,6 +3,7 @@ import "./Signup.css";
 import { Link } from "react-router-dom";
 import {useState} from "react";
 import axios from "axios";
+import API_URL from "./constants";
 
 function SignUp(){
     const  [username,setusername]=useState('');
@@ -12,7 +13,7 @@ function SignUp(){
     const  [Mobile,setMobile]=useState('');
    
     const  handleApi=()=>{
-        const url='http://localhost:4000/signup';
+        const url=API_URL+'/signup';
         const data={username,password, Mobile, email}
         
 
