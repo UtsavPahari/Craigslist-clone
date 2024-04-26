@@ -50,7 +50,7 @@ function AddProduct(){
     return(
         <div>
             <Header/>
-            Welcome to the Product! Brother Hoyaaaa!
+           
             <h2>Add Product Here:</h2>
             <label className="col-form-level">Product Name</label>
             <input type="text" className="form-control" value={pname} onChange={(e)=>{

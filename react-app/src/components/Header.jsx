@@ -2,6 +2,7 @@ import './Header.css'
 import { Link, useNavigate } from 'react-router-dom';
 import { FaSearch } from 'react-icons/fa';  
 import { useState } from 'react';
+import API_URL from './constants';
 
 
 function Header(props){
@@ -12,6 +13,8 @@ function Header(props){
         localStorage.removeItem('userId');
         navigate('/');
     }
+
+   
 return(
 <div className=' header-container d-flex justify-content-between' >
     

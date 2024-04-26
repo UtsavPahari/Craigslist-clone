@@ -24,9 +24,7 @@ app.use('/uploads',express.static(path.join(__dirname,'uploads')));
 
 
 
-app.use(cors({
-  origin: 'https://cosmic-figolla-e6e93a.netlify.app'
-}));
+app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 

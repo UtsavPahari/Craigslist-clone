@@ -18,7 +18,7 @@ function Login(){
         .then((res)=>{
             
             if(res.data.message){
-                // alert(res.data.message)
+                alert(res.data.message)
                 if(res.data.token){
                     localStorage.setItem('token',res.data.token)
                     localStorage.setItem('userId',res.data.userId)
